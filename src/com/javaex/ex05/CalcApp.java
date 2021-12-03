@@ -14,34 +14,34 @@ public class CalcApp {
 		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.print(">>");
+			System.out.print(">> ");
 			String numLine = sc.nextLine(); 
 			
 			try {
 				String sArray[] = numLine.split(" "); // 공백 넣어서 쓰라고 지시해준건가?
 				
-				Integer[] iArray = new Integer[2];
-				iArray[0] = Integer.parseInt(sArray[0]);
-				iArray[1] = Integer.parseInt(sArray[2]);
+				// 배열에 넣어줄 필요가 없었음2
+				int num01 = Integer.parseInt(sArray[0]);
+				int num02 = Integer.parseInt(sArray[2]);
 						
 				switch(sArray[1]) {
 				case "+":
-					a.setValue(iArray[0], iArray[1]);
+					a.setValue(num01, num02);
 					System.out.println(a.calculate());
 					break;
 						
 				case "-":
-					s.setValue(iArray[0], iArray[1]);
+					s.setValue(num01, num02);
 					System.out.println(s.calculate());
 					break;
 						
 				case "*":
-					m.setValue(iArray[0], iArray[1]);
+					m.setValue(num01, num02);
 					System.out.println(m.calculate());
 					break;
 						
 				case "/":
-					d.setValue(iArray[0], iArray[1]);
+					d.setValue(num01, num02);
 					System.out.println(d.calculate());
 					break;
 									

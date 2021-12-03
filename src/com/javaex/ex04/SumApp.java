@@ -15,9 +15,9 @@ public class SumApp {
 		String[] sArray = numLine.split(" ");
 		
 		for (int i = 0; i < sArray.length; i++) {
-			Integer[] s = new Integer[sArray.length];
-			s[i] = Integer.parseInt(sArray[i]);
-			sum = sum + s[i];
+			// 배열에 넣어줄 필요가 없었음1
+			int num = Integer.parseInt(sArray[i]);
+			sum = sum + num;
 		}
 
 		System.out.println("합:" + sum);
