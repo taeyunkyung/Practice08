@@ -12,17 +12,22 @@ public class SumApp {
 		String numLine = sc.nextLine();
 
 		// 코드를 작성하세요
-		String[] sArray = numLine.split(" ");
+		// String[] sArray = numLine.split(" ");
+		String data[] = numLine.split(" ");
 		
+		/*
 		for (int i = 0; i < sArray.length; i++) {
-			// 배열에 넣어줄 필요가 없었음1
 			int num = Integer.parseInt(sArray[i]);
 			sum = sum + num;
 		}
-
+	    */
+		for(int i=0; i<data.length; i++) {
+			sum = sum + Integer.parseInt(data[i]); // int num 빠진
+		}
+		
 		System.out.println("합:" + sum);
 
-		sc.close(); // 대안이 있을 것 같다..1
+		sc.close(); 
 	}
 
 }

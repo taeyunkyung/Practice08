@@ -17,6 +17,12 @@ public class Friend {
 		this.school = friend[2];
 	}
 
+	public Friend(String name, String hp, String school) {
+		this.name = name;
+		this.hp = hp;
+		this.school = school;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -42,8 +48,6 @@ public class Friend {
 	}
 
 	public void showInfo() {
-		System.out.print("이름:" + name);
-		System.out.print(" 핸드폰:" + hp);
-		System.out.println(" 학교:" + school);
+		System.out.println("이름:" + name + " 핸드폰:" + hp + " 학교:" + school);
 	}
 }
